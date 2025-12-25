@@ -10,6 +10,7 @@ def generate_password(length=16):
     all_chars = upper + lower + digits + special
 
     password = ''.join(random.choice(all_chars) for _ in range(length))
+    
     return password
 
 if __name__ == "__main__":
